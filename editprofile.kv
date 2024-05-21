@@ -1,0 +1,46 @@
+<EditProfileScreen>:
+    canvas.before:
+        Color:
+            rgba: 1, 0.5, 0.5, 1  # Cor rosa claro
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [0]
+
+    Image:
+        source: "C:\\Users\\lulusinha\\Downloads\\perfil.png"
+        size_hint: None, None
+        size: 150, 150
+        pos_hint: {'center_x': 0.5, 'top': 0.9}
+
+    Button:
+        text: "Editar Foto de Perfil"
+        size_hint: None, None
+        size: 150, 50
+        pos_hint: {'center_x': 0.6, 'top': 0.7}
+
+    TextInput:
+        hint_text: "Nome"
+        size_hint: None, None
+        size: 300, 50
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+    TextInput:
+        hint_text: "Email"
+        size_hint: None, None
+        size: 300, 60
+        pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+        multiline: False
+
+    TextInput:
+        hint_text: "História"
+        size_hint: None, None
+        size: 300, 90
+        pos_hint: {'center_x': 0.5, 'center_y': 0.3}
+        multiline: True
+
+    Button:
+        text: "Salvar Alterações"
+        size_hint: None, None
+        size: 200, 50
+        pos_hint: {'center_x': 0.5, 'y': 0.05}
